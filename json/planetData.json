@@ -1,0 +1,129 @@
+{
+	"ranges": {
+		"orbitalVelocityMin": 0,
+		"orbitalVelocityMax": 47.9,
+		"orbitalVelocityScaleMin": 0.01,
+		"orbitalVelocityScaleMax": 0.03,
+		"distanceFromSunMin": 0.387,
+		"distanceFromSunMax": 39.53,
+		"distanceFromSunScaleMin": 300,
+		"distanceFromSunScaleMax": 5000
+	},
+	
+	"sun": {
+		"atmosphere": {
+			"cols": [
+				{"id":"","label":"Element","pattern":"","type":"string"},
+		        {"id":"","label":"Percent","pattern":"","type":"number"}			
+			],
+			"rows": [
+		        {"c":[{"v":"Hydrogen","f":null},{"v":71.1,"f":null}]},
+		        {"c":[{"v":"Helium","f":null},{"v":27.4,"f":null}]},
+		        {"c":[{"v":"Metals","f":null},{"v":1.5,"f":null}]}
+			]
+		},
+		"distanceFromSun": {
+			"cols": [
+				{"id":"","label":"Planet","pattern":"","type":"string"},
+		        {"id":"","label":"Distance","pattern":"","type":"number"}			
+			],
+			"rows": [
+		        {"c":[{"v":"Mercury","f":null},{"v":57.9,"f":null}]},
+		        {"c":[{"v":"Venus","f":null},{"v":108,"f":null}]},
+		        {"c":[{"v":"Earth","f":null},{"v":150,"f":null}]},
+		        {"c":[{"v":"Mars","f":null},{"v":228,"f":null}]},	
+		        {"c":[{"v":"Jupiter","f":null},{"v":778,"f":null}]},
+		        {"c":[{"v":"Saturn","f":null},{"v":1430,"f":null}]},
+		        {"c":[{"v":"Uranus","f":null},{"v":2870,"f":null}]},
+		        {"c":[{"v":"Neptune","f":null},{"v":4500,"f":null}]},
+		        {"c":[{"v":"Pluto","f":null},{"v":5900,"f":null}]}	        		        	        
+			]
+		},
+		"temperature": {
+			"cols": [
+				{"id":"","label":"Time","pattern":"","type":"string"},
+		        {"id":"","label":"Mercury","pattern":"","type":"number"}			
+			],
+			"rows": [
+		        {"c":[{"v":"","f":null},{"v":50,"f":null}]}
+			]
+		}				
+	},
+	"mercury": {
+		"atmosphere": {
+			"cols": [
+				{"id":"","label":"Element","pattern":"","type":"string"},
+		        {"id":"","label":"Percent","pattern":"","type":"number"}			
+			],
+			"rows": [
+		        {"c":[{"v":"Oxygen","f":null},{"v":42,"f":null}]},
+		        {"c":[{"v":"Sodium","f":null},{"v":29,"f":null}]},
+		        {"c":[{"v":"Hydrogen","f":null},{"v":22,"f":null}]},
+		        {"c":[{"v":"Helium","f":null},{"v":6,"f":null}]},
+		        {"c":[{"v":"Potassium","f":null},{"v":0.5,"f":null}]},
+		        {"c":[{"v":"Other","f":null},{"v":0.5,"f":null}]}
+			]
+		},	
+		"temperature": {
+			"cols": [
+				{"id":"","label":"Element","pattern":"","type":"string"},
+		        {"id":"","label":"Percent","pattern":"","type":"number"}			
+			],
+			"rows": [
+		        {"c":[{"v":"Oxygen","f":null},{"v":42,"f":null}]},
+		        {"c":[{"v":"Sodium","f":null},{"v":29,"f":null}]},
+		        {"c":[{"v":"Hydrogen","f":null},{"v":22,"f":null}]},
+		        {"c":[{"v":"Helium","f":null},{"v":6,"f":null}]},
+		        {"c":[{"v":"Potassium","f":null},{"v":0.5,"f":null}]},
+		        {"c":[{"v":"Other","f":null},{"v":0.5,"f":null}]}
+			]		
+		},
+		"orbitalVelocity": 47.9,
+		"distanceFromSun": 0.387
+	},
+	"venus": {
+		"orbitalVelocity": 35.0,
+		"distanceFromSun": 0.723
+	},
+	"earth": {
+		"atmosphere": {
+			"cols": [
+				{"id":"","label":"Element","pattern":"","type":"string"},
+		        {"id":"","label":"Percent","pattern":"","type":"number"}			
+			],
+			"rows": [
+		        {"c":[{"v":"Nitrogen","f":null},{"v":78.084,"f":null}]},
+		        {"c":[{"v":"Oxygen","f":null},{"v":20.946,"f":null}]},
+		        {"c":[{"v":"Argon","f":null},{"v":0.93,"f":null}]},
+		        {"c":[{"v":"Carbon Dioxide","f":null},{"v":0.039,"f":null}]},
+		        {"c":[{"v":"Other Gases","f":null},{"v":0.001,"f":null}]}
+			]
+		},						
+		"orbitalVelocity": 29.8,
+		"distanceFromSun": 1
+	},
+	"mars": {
+		"orbitalVelocity": 24.1,
+		"distanceFromSun": 1.524
+	},
+	"jupiter": {
+		"orbitalVelocity": 13.1,
+		"distanceFromSun": 5.203
+	},
+	"saturn": {
+		"orbitalVelocity": 9.6,
+		"distanceFromSun": 9.529
+	},
+	"uranus": {
+		"orbitalVelocity": 6.8,
+		"distanceFromSun": 19.19
+	},
+	"neptune": {
+		"orbitalVelocity": 5.4,
+		"distanceFromSun": 30.06
+	},
+	"pluto": {
+		"orbitalVelocity": 4.7,
+		"distanceFromSun": 39.53
+	}
+}

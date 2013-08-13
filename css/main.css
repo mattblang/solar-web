@@ -1,0 +1,9 @@
+body {
+	margin: 0px;
+}
+
+div#interface {
+	position: absolute;
+	width: 100%;
+}
+

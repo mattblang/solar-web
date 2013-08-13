@@ -1,0 +1,55 @@
+<!DOCTYPE html5>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>WebGL solar system explorer</title>
+	
+		<link rel="stylesheet" href="css/main.css" />
+		
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+	</head>
+
+	<body>
+		<div id="main-canvas">
+			<div id="interface">
+			</div>
+		</div>
+		
+		<script src="js/vendor/jquery-2.0.3.min.js"></script>
+		<script src="js/vendor/three.js"></script>	
+		<script src="js/vendor/OrbitControls.js"></script>
+		<script src="js/vendor/stats.min.js"></script>
+		<script src="js/vendor/THREEx.WindowResize.js"></script>
+		<script src="js/vendor/tween.min.js"></script>
+		
+		<script src="js/gl.js"></script>
+		<script>
+			// load planet data
+			// reference: http://stackoverflow.com/questions/2765411/is-it-possible-to-set-asyncfalse-to-getjson-call
+			var planetData;
+			$.ajax({
+				url: "json/planetData.json",
+				dataType: "json",
+				async: false,
+				success: function(data) {
+					planetData = data;
+					console.log("planetary data loaded");
+
+					// load Google charts lib
+					// google.load("visualization", "1", {packages:["corechart", "geochart"]});
+					// google.setOnLoadCallback(function() {
+						// initUI();
+						// initGL();						
+					// });
+				},
+				error: function(jqXHR, textStatus, errorThrown) {
+					console.log("error loading json: " + errorThrown);
+				}
+			});
+					
+			initGL();
+		</script>
+	</body>
+</html>
